@@ -4,23 +4,45 @@
   <meta charset="utf-8">
   <title>Järn & Trä Nya Smedja </title>
   <style>
-  h1 {text-align: center;}
-  p {text-align: center;}
-  div {text-align: center;}
-  script {text-align: center;}
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    h1, p {
+      text-align: center;
+    }
+
+    /* Center the fb-page div */
+    .fb-page {
+      display: block;
+      margin: 0 auto; /* centers it horizontally */
+      width: 400px;   /* must match data-width */
+    }
   </style>
-  </head>
+</head>
 <body>
   <!-- 1) SDK root + init -->
   <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v23.0&appId=1533544134275273"></script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v23.0&appId=1533544134275273"></script>
 
   <!-- 2) Your page plugin markup -->
   <h1>Järn & Trä Nya Smedja</h1>
   <p>Telefonnummer: 070-326 66 55<br>Email: mickesmed@yahoo.se<br>Adress: </p>
   <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
-  <div style="margin:0 auto;" class="fb-page" data-href="https://www.facebook.com/jarnotrabastekilleab" data-tabs="timeline" data-width="400" data-height="3000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/jarnotrabastekilleab" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/jarnotrabastekilleab">Järn &amp; Trä Bästekille AB</a></blockquote></div>
-      
+  <div class="fb-page"
+       data-href="https://www.facebook.com/jarnotrabastekilleab"
+       data-tabs="timeline"
+       data-width="400"
+       data-height="3000"
+       data-small-header="false"
+       data-adapt-container-width="true"
+       data-hide-cover="false"
+       data-show-facepile="true">
+    <blockquote cite="https://www.facebook.com/jarnotrabastekilleab"
+                class="fb-xfbml-parse-ignore">
+      <a href="https://www.facebook.com/jarnotrabastekilleab">Järn &amp; Trä Bästekille AB</a>
+    </blockquote>
+  </div>
 </body>
 </html>
